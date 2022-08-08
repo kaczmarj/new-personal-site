@@ -74,6 +74,29 @@ be gzipped.
 
 This process can take some time... perhaps 20 to 30 minutes. Perhaps more. Maybe less. But probably more.
 
+The script that converts the GeoJSON to TIF is relatively straightforward. The difficult
+work of constructing the pyramidal TIF is done by ASAP and `wholeslidedata`.
+
+Here are the operations:
+1. Convert the GeoJSON format to a [format specific to `wholeslidedata`](https://github.com/DIAGNijmegen/pathology-whole-slide-data/blob/e6ba4338ed2528e4fd40552edaee3c845973e7f8/wholeslidedata/annotation/parser.py#L18-L47).
+    ```json
+    {
+    "index": 0,
+    "type": "polygon",
+    "coordinates": [[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]],
+    "label": {
+        "name": "nucleus",
+        "value": 1
+      }
+    }
+    ```
+2. Identify the physical units of the whole slide image. This is microns per pixel.
+If this is not correct, the segmentations will not overlap properly with the original slide image.
+3. Decide on a tile size for the tiled TIF (1024 is a reasonable choice).
+4. Write the mask with `wholeslidedata.accessories.asap.write_mask2.convert_annotations_to_mask`
+
+For a complete example, see [this section of `geojson2tif.py`](https://github.com/kaczmarj/geojson2tif/blob/1be6b99ea1f323e55f2c032905cb2cadd6b6af0d/geojson-to-tif.py#L29-L50).
+
 
 ## Why Apptainer (containers in general?)
 
