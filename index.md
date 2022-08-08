@@ -15,5 +15,5 @@ and other data modalities.
 
 This website is a work in progress.
 
-Please do see [my blog](/blog/). I try to write about interesting and useful topics,
+Please do see [my blog](blog/). I try to write about interesting and useful topics,
 particularly things I've done over the course of my PhD.
