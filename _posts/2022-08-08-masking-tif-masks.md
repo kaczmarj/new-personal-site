@@ -90,4 +90,4 @@ use it headless on a high performance computing cluster, where I don't have root
 
 ## Using the images in a machine learning pipeline
 
-TODO.
+I will cover this in another blog post.
