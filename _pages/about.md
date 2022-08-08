@@ -1,8 +1,9 @@
 ---
 layout: single
-permalink: /about/
-title: About
+permalink: /publications/
+title: Publications
 author_profile: true
 ---
 
-I am an MD-PhD student at Stony Brook University in New York.
+Please see [my Google Scholar profile](https://scholar.google.com/citations?user=1QmdUeUAAAAJ&hl=en)
+for now. I am in the process of adding citations to this page.
