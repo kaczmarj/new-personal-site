@@ -110,9 +110,9 @@ author:
   location         : "New York, USA"
   email            : "jakub.kaczmarzyk@stonybrookmedicine.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jakub.kaczmarzyk@stonybrookmedicine.edu"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:jakub.kaczmarzyk@stonybrookmedicine.edu"
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google"
       url: "https://scholar.google.com/citations?user=1QmdUeUAAAAJ&hl=en"
