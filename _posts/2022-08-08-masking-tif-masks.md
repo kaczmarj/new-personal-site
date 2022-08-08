@@ -15,7 +15,7 @@ The segmentations can be of many different things, including nuclei, cell bounda
 
 As part of this, I created a command-line tool to convert
 a GeoJSON representation of polygons to a binary mask TIF image. Find it here:
-https://github.com/kaczmarj/geojson2tif/
+[https://github.com/kaczmarj/geojson2tif/](https://github.com/kaczmarj/geojson2tif/).
 
 The main workhorse is the [ASAP whole slide image viewer](https://computationalpathologygroup.github.io/ASAP/)
 and the [`wholeslidedata` Python package](https://github.com/DIAGNijmegen/pathology-whole-slide-data).
@@ -26,7 +26,7 @@ These packages implement the conversion of a set of polygons to a whole slide im
 GeoJSON is a powerful format to represent geometries, like polygons. Below I show an
 example of GeoJSON with one polygon. This is simply a JSON object that conforms to a schema.
 As such, it is highly flexible. You can use common JSON tools (like Python's `json` module in the standard library)
-with GeoJSON. Additionally, QuIP is able to consume GeoJSON (just drag and drop into the viewer).
+with GeoJSON. Additionally, QuPATH is able to consume GeoJSON (just drag and drop into the viewer).
 
 ```json
 {
@@ -74,6 +74,19 @@ be gzipped.
 
 This process can take some time... perhaps 20 to 30 minutes. Perhaps more. Maybe less. But probably more.
 
+
+## Why Apptainer (containers in general?)
+
+ASAP is an incredibly powerful tool, but in my experience, the installation is awkward.
+Building from source requires lots of different dependencies (which is expected), and
+thankfully the maintainers provide `.deb` packages for installation on Debian-based systems.
+On my laptop, I run Debian Testing, but I did not want to install ASAP globally (not to mention its dependencies).
+Containers to the rescue. I created [a Dockerfile](https://github.com/kaczmarj/geojson2tif/blob/main/Dockerfile)
+that builds a Docker image based on Ubuntu and installs ASAP. I chose to build it as a Docker image instead
+of directly as Apptainer/Singularity because of personal preference. I then pushed it to DockerHub,
+and Apptainer/Singularity will happilly pull and convert this image. Long story short,
+I am able to use ASAP without having to install it globally on my laptop. I can even
+use it headless on a high performance computing cluster, where I don't have root access.
 
 ## Using the images in a machine learning pipeline
 
