@@ -105,52 +105,30 @@ analytics:
 # Site Author
 author:
   name             : "Jakub Kaczmarzyk"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "MD-PhD student at Stony Brook Univ."
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "MD-PhD student at Stony Brook University"
   location         : "New York, USA"
-  email            :
+  email            : "jakub.kaczmarzyk@stonybrookmedicine.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:jakub.kaczmarzyk@stonybrookmedicine.edu"
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/JakubKaczmarzyk"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=1QmdUeUAAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/kaczmarj"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   # url: "https://instagram.com/"
+      url: "https://github.com/kaczmarj/"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/0000-0002-5544-7577"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: https://twitter.com/JakubKaczmarzyk
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
 
 # Reading Files
 include:
