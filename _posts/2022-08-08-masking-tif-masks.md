@@ -1,7 +1,6 @@
 ---
-layout: post
-author_profile: true
 title:  "Making pyramidal TIF masks for segmentation"
+excerpt: "Convert polygons in GeoJSON to a TIF whole slide image mask."
 ---
 
 # Welcome
