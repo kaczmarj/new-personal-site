@@ -27,6 +27,8 @@ GeoJSON is a powerful format to represent geometries, like polygons. Below I sho
 example of GeoJSON with one polygon. This is simply a JSON object that conforms to a schema.
 As such, it is highly flexible. You can use common JSON tools (like Python's `json` module in the standard library)
 with GeoJSON. Additionally, QuPATH is able to consume GeoJSON (just drag and drop into the viewer).
+In the context of this blog post, the coordinates should be in base pixels (base meaning the highest
+resolution of the whole slide image).
 
 ```json
 {
