@@ -22,6 +22,6 @@ This website is under construction. More updates coming.
 ## Technical Skills
 
 - Programming languages: Python, C, Java, SQL
-- Frameworks: TensforFlow, PyTorch, HuggingFace, git
+- Frameworks: TensorFlow, PyTorch, HuggingFace, git
 - Developing, evaluating and interpreting machine learning models on high performance computing clusters (UGE/Slurm)
 
